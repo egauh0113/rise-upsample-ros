@@ -1,0 +1,9 @@
+<library path="lib/libpcl_upsample_nodelet">
+  <class name="pcl_upsample/PclUpsampleNodelet"
+         type="pcl_upsample::PclUpsampleNodelet"
+         base_class_type="nodelet::Nodelet">
+    <description>
+      PCL upsampling nodelet.
+    </description>
+  </class>
+</library>

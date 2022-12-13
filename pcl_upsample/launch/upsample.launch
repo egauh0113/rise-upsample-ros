@@ -1,0 +1,10 @@
+<launch>
+    <!-- PCL upsample nodelet  -->
+    <node pkg="nodelet" type="nodelet" name="pcl_upsample" args="standalone pcl_upsample/PclUpsampleNodelet" output="screen">
+        <param name="search_radius" value="0.03"/>
+        <param name="upsample_size" value="0.01"/>
+
+        <remap from="~pcl_input"    to="pcl_input"/>
+        <remap from="~pcl_output"   to="pcl_output"/>
+    </node>
+</launch>
